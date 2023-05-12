@@ -1,0 +1,162 @@
+/***************************/
+/* GENERAL */
+/****************************/
+*{
+    font-family: 'Montserrat', 'Fraunces', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+main#main-content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    height: 900px;
+}
+
+/***************************/
+/* CARD */
+/****************************/
+article.card{
+    box-shadow: 0 0 10px hsl(228, 12%, 48%);
+    border-radius: 8px;
+}
+
+
+/***************************/
+/* IMAGE */
+/****************************/
+.image .img-desktop{
+    display: none;
+}
+
+.image .img-mobile{
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/***************************/
+/* PRODUCT */
+/****************************/
+.product p:first-child{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.product h4{
+    font-size: 20px;
+}
+
+.product p:first-child,
+.product p:last-child{
+    color: hsl(228, 12%, 48%);
+}
+
+.product,
+.prices{
+    padding: 20px;
+}
+
+
+/***************************/
+/* PRICES */
+/****************************/
+.prices p.price{
+    float: left;
+    font-size: 25px;
+    margin: 30px 20px 0 0;
+    color: hsl(158, 36%, 37%);
+}
+
+.prices p.old-price{
+    margin: 35px 0 50px 0;
+    text-decoration: line-through;
+}
+
+button{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    
+}
+
+button p{
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+
+button img{
+    float: left;
+}
+
+
+/***************************/
+/* MEDIA QUERIES */
+/****************************/
+@media only screen and (min-width: 1440px){
+
+/***************************/
+/* GENERAL */
+/****************************/
+main#main-content{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+}
+/***************************/
+/* IMAGE */
+/****************************/
+.image .img-desktop{
+    display: block;
+    width: 300px;
+    float: left;
+    margin: 0 100px 0 0;
+}
+
+.image .img-mobile{
+    display: none;
+  }
+}
+
+
+/***************************/
+/* PRICES */
+/****************************/
+button{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 375px){
+
+/***************************/
+/* PRICES */
+/****************************/
+button{
+    display: block;
+    margin: 0 auto;
+ }
+}
+
+
+
+
+
